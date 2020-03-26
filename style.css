@@ -3,10 +3,11 @@
   outline: none;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   background: #eee;
-  font-family: "Ubuntu", "微軟正黑體", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   letter-spacing: 0.65px;
   font-size: 15px;
   color: #555;
@@ -49,27 +50,30 @@ h3 {
   display: flex;
 }
 .resume::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 6px;
-  background: #4429B8;
+  background: #4429b8;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 .resume::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
-.resume .base, .resume .func {
+.resume .base,
+.resume .func {
   box-sizing: border-box;
   float: left;
 }
-.resume .base > div, .resume .func > div {
+.resume .base > div,
+.resume .func > div {
   padding-bottom: 10px;
 }
-.resume .base > div:last-of-type, .resume .func > div:last-of-type {
+.resume .base > div:last-of-type,
+.resume .func > div:last-of-type {
   padding-bottom: 0;
 }
 .resume .base {
@@ -78,16 +82,16 @@ h3 {
   background: rgba(238, 238, 238, 0.6);
 }
 .resume .base .profile {
-  background: #4429B8;
+  background: #4429b8;
   padding: 30px 15px 5px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
   z-index: 2;
 }
 .resume .base .profile::after {
-  content: "";
+  content: '';
   position: absolute;
-  background: #4429B8;
+  background: #4429b8;
   width: 100%;
   height: 30px;
   bottom: -15px;
@@ -123,7 +127,7 @@ h3 {
   color: #b87f29;
 }
 .resume .base .contact div i {
-  color: #4429B8;
+  color: #4429b8;
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -135,7 +139,7 @@ h3 {
   position: relative;
 }
 .resume .base .contact div span::after {
-  content: "";
+  content: '';
   position: absolute;
   background: #b87f29;
   height: 1px;
@@ -164,7 +168,7 @@ h3 {
 .resume .base .follow .box i {
   display: inline-block;
   font-size: 30px;
-  background: #4429B8;
+  background: #4429b8;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -206,7 +210,7 @@ h3 {
 }
 .resume .func h3 i {
   color: #fcfcfc;
-  background: #4429B8;
+  background: #4429b8;
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -217,23 +221,28 @@ h3 {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
-.resume .func .work, .resume .func .edu {
+.resume .func .work,
+.resume .func .edu {
   float: left;
 }
-.resume .func .work small, .resume .func .edu small {
+.resume .func .work small,
+.resume .func .edu small {
   display: block;
   opacity: 0.7;
 }
-.resume .func .work ul li, .resume .func .edu ul li {
+.resume .func .work ul li,
+.resume .func .edu ul li {
   position: relative;
   margin-left: 15px;
   padding-left: 25px;
   padding-bottom: 15px;
 }
-.resume .func .work ul li:hover::before, .resume .func .edu ul li:hover::before {
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
   animation: circle 1.2s infinite;
 }
-.resume .func .work ul li:hover span, .resume .func .edu ul li:hover span {
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
   color: #b87f29;
 }
 @keyframes circle {
@@ -244,23 +253,30 @@ h3 {
     box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
   }
 }
-.resume .func .work ul li:first-of-type::before, .resume .func .edu ul li:first-of-type::before {
+.resume .func .work ul li:first-of-type::before,
+.resume .func .edu ul li:first-of-type::before {
   width: 10px;
   height: 10px;
   left: -2px;
 }
-.resume .func .work ul li:last-of-type, .resume .func .edu ul li:last-of-type {
+.resume .func .work ul li:last-of-type,
+.resume .func .edu ul li:last-of-type {
   padding-bottom: 3px;
 }
-.resume .func .work ul li:last-of-type::after, .resume .func .edu ul li:last-of-type::after {
+.resume .func .work ul li:last-of-type::after,
+.resume .func .edu ul li:last-of-type::after {
   border-radius: 1.5px;
 }
-.resume .func .work ul li::before, .resume .func .work ul li::after, .resume .func .edu ul li::before, .resume .func .edu ul li::after {
-  content: "";
+.resume .func .work ul li::before,
+.resume .func .work ul li::after,
+.resume .func .edu ul li::before,
+.resume .func .edu ul li::after {
+  content: '';
   display: block;
   position: absolute;
 }
-.resume .func .work ul li::before, .resume .func .edu ul li::before {
+.resume .func .work ul li::before,
+.resume .func .edu ul li::before {
   width: 7px;
   height: 7px;
   border: 3px solid #3d405b;
@@ -269,14 +285,16 @@ h3 {
   left: 0;
   z-index: 1;
 }
-.resume .func .work ul li::after, .resume .func .edu ul li::after {
+.resume .func .work ul li::after,
+.resume .func .edu ul li::after {
   width: 3px;
   height: 100%;
   background: #3d405b;
   left: 5px;
   top: 0;
 }
-.resume .func .work ul li span, .resume .func .edu ul li span {
+.resume .func .work ul li span,
+.resume .func .edu ul li span {
   transition-duration: 0.3s;
 }
 .resume .func .work {
@@ -319,8 +337,8 @@ h3 {
   position: absolute;
   top: -1px;
   height: 4px;
-  background: #4429B8;
-  box-shadow: 0 0 0 #4429B8;
+  background: #4429b8;
+  box-shadow: 0 0 0 #4429b8;
   border-radius: 5px;
 }
 .resume .func .skills-soft ul {
@@ -335,7 +353,8 @@ h3 {
   stroke: #b87f29;
   stroke-width: 4px;
 }
-.resume .func .skills-soft ul li:hover span, .resume .func .skills-soft ul li:hover small {
+.resume .func .skills-soft ul li:hover span,
+.resume .func .skills-soft ul li:hover small {
   transform: scale(1.2);
 }
 .resume .func .skills-soft ul li svg {
@@ -349,10 +368,11 @@ h3 {
 }
 .resume .func .skills-soft ul li svg .cbar {
   stroke-width: 3px;
-  stroke: #4429B8;
+  stroke: #4429b8;
   stroke-linecap: round;
 }
-.resume .func .skills-soft ul li span, .resume .func .skills-soft ul li small {
+.resume .func .skills-soft ul li span,
+.resume .func .skills-soft ul li small {
   position: absolute;
   display: block;
   width: 100%;
@@ -388,7 +408,7 @@ h3 {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: #4429B8;
+  color: #4429b8;
   transition-duration: 0.3s;
 }
 .resume .func .interests-items div span {
