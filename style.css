@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+:root {
+  --primary-color: #4429b8;
+  --secondary-color: #b87f29;
+}
+
 * {
   outline: none;
 }
@@ -53,7 +59,7 @@ h3 {
   content: '';
   width: 100%;
   height: 6px;
-  background: #4429b8;
+  background: var(--primary-color);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -82,7 +88,7 @@ h3 {
   background: rgba(238, 238, 238, 0.6);
 }
 .resume .base .profile {
-  background: #4429b8;
+  background: var(--primary-color);
   padding: 30px 15px 5px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
@@ -91,7 +97,7 @@ h3 {
 .resume .base .profile::after {
   content: '';
   position: absolute;
-  background: #4429b8;
+  background: var(--primary-color);
   width: 100%;
   height: 30px;
   bottom: -15px;
@@ -118,16 +124,16 @@ h3 {
   line-height: 30px;
 }
 .resume .base .contact div a:hover {
-  color: #b87f29;
+  color: var(--secondary-color);
 }
 .resume .base .contact div a:hover span::after {
   width: 100%;
 }
 .resume .base .contact div:hover i {
-  color: #b87f29;
+  color: var(--secondary-color);
 }
 .resume .base .contact div i {
-  color: #4429b8;
+  color: var(--primary-color);
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -141,7 +147,7 @@ h3 {
 .resume .base .contact div span::after {
   content: '';
   position: absolute;
-  background: #b87f29;
+  background: var(--secondary-color);
   height: 1px;
   width: 0;
   bottom: 0;
@@ -158,7 +164,7 @@ h3 {
   vertical-align: text-bottom;
 }
 .resume .base .follow .box a:hover i {
-  background: #b87f29;
+  background: var(--secondary-color);
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
@@ -168,7 +174,7 @@ h3 {
 .resume .base .follow .box i {
   display: inline-block;
   font-size: 30px;
-  background: #4429b8;
+  background: var(--primary-color);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -210,7 +216,7 @@ h3 {
 }
 .resume .func h3 i {
   color: #fcfcfc;
-  background: #4429b8;
+  background: var(--primary-color);
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -243,7 +249,7 @@ h3 {
 }
 .resume .func .work ul li:hover span,
 .resume .func .edu ul li:hover span {
-  color: #b87f29;
+  color: var(--secondary-color);
 }
 @keyframes circle {
   from {
@@ -316,11 +322,11 @@ h3 {
   transition-duration: 0.3s;
 }
 .resume .func .skills-prog ul li:hover {
-  color: #b87f29;
+  color: var(--secondary-color);
 }
 .resume .func .skills-prog ul li:hover .skills-bar .bar {
-  background: #b87f29;
-  box-shadow: 0 0 0 1px #b87f29;
+  background: var(--secondary-color);
+  box-shadow: 0 0 0 1px var(--secondary-color);
 }
 .resume .func .skills-prog ul li span {
   display: block;
@@ -337,8 +343,8 @@ h3 {
   position: absolute;
   top: -1px;
   height: 4px;
-  background: #4429b8;
-  box-shadow: 0 0 0 #4429b8;
+  background: var(--primary-color);
+  box-shadow: 0 0 0 var(--primary-color);
   border-radius: 5px;
 }
 .resume .func .skills-soft ul {
@@ -350,7 +356,7 @@ h3 {
   position: relative;
 }
 .resume .func .skills-soft ul li:hover svg .cbar {
-  stroke: #b87f29;
+  stroke: var(--secondary-color);
   stroke-width: 4px;
 }
 .resume .func .skills-soft ul li:hover span,
@@ -368,7 +374,7 @@ h3 {
 }
 .resume .func .skills-soft ul li svg .cbar {
   stroke-width: 3px;
-  stroke: #4429b8;
+  stroke: var(--primary-color);
   stroke-linecap: round;
 }
 .resume .func .skills-soft ul li span,
@@ -400,7 +406,7 @@ h3 {
   transform: scale(1.2);
 }
 .resume .func .interests-items div:hover span {
-  color: #b87f29;
+  color: var(--secondary-color);
   transition-duration: 0.3s;
 }
 .resume .func .interests-items div i {
@@ -408,7 +414,7 @@ h3 {
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: #4429b8;
+  color: var(--primary-color);
   transition-duration: 0.3s;
 }
 .resume .func .interests-items div span {
