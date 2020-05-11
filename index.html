@@ -2,28 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiago Rodrigues</title>
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Ubuntu"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://s.plurk.com/0e89357f530f0a843c68440a020d4eb5.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
+
   <body>
     <div class="resume">
       <div class="base">
-        <div class="profile">
+        <div id="profile">
           <div class="photo">
             <img
               src="https://avatars2.githubusercontent.com/u/45070690?s=400&v=4"
@@ -34,7 +22,8 @@
             <small class="job">Software Developer</small>
           </div>
         </div>
-        <div class="about">
+
+        <div id="about">
           <h3>About me</h3>
           I've been working with software development for the past two years,
           going through different areas of development, but mainly focused on
@@ -49,37 +38,41 @@
           If you get interested and want to know more about me, feel free to get
           in touch.
         </div>
-        <div class="contact">
+
+        <div id="contact">
           <h3>Contact</h3>
-          <div class="call">
-            <i class="fa fa-phone"></i><span>(+55) 19-99824-3020</span>
-          </div>
-          <div class="address">
-            <i class="fa fa-map-marker"></i><span>Campinas, Brazil</span>
-          </div>
-          <div class="email">
-            <i class="fa fa-envelope"></i
-            ><span>thiago.clrodrigues@ gmail.com</span>
-          </div>
           <div class="website">
             <a href="#" target="_blank">
-              <i class="fa fa-home"></i><span>website</span></a
-            >
+              <i class="fa fa-home"></i>
+              <span>website</span>
+            </a>
+          </div>
+          <div class="email">
+            <i class="fa fa-envelope"></i>
+            <span>thiago.clrodrigues@<br />gmail.com</span>
           </div>
         </div>
-        <div class="follow">
+
+        <div id="follow">
           <h3>Follow</h3>
           <div class="box">
-            <a href="https://github.com/Thiago92Rodrigues" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
+            <a href="https://github.com/Thiago92Rodrigues" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
             <a
               href="https://www.linkedin.com/in/thiago-leme-rodrigues/"
               target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="javascript:void(0);"><i class="fab fa-facebook"></i></a>
-            <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="box">
+            <a href="https://codepen.io/th92rodr/" target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
+            <a href="https://twitter.com/th92rodrigues" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -89,12 +82,14 @@
           <h3><i class="fa fa-briefcase"></i>Work Experience</h3>
           <ul>
             <li>
-              <span>Software Developer</span><small>Kryptus EED S.A.</small
-              ><small>Jan 2019 - Now</small>
+              <span>Software Developer</span>
+              <small>Kryptus EED S.A.</small>
+              <small>Jan 2019 - Now</small>
             </li>
             <li>
-              <span>Software Developer Intern</span
-              ><small>Kryptus EED S.A</small><small>Jul 2018 - Jan 2019</small>
+              <span>Software Developer Intern</span>
+              <small>Kryptus EED S.A</small>
+              <small>Jul 2018 - Jan 2019</small>
             </li>
           </ul>
         </div>
@@ -114,27 +109,27 @@
           <h3><i class="fa fa-code"></i>Programming Skills</h3>
 
           <div>
-            <h2>Languages</h2>
+            <h3>Languages</h3>
             <ul>
-              <li data-percent="70">
+              <li data-percent="75">
                 <span>JavaScript</span>
                 <div class="skills-bar">
                   <div class="bar"></div>
                 </div>
               </li>
-              <li data-percent="75">
+              <li data-percent="65">
                 <span>Python</span>
                 <div class="skills-bar">
                   <div class="bar"></div>
                 </div>
               </li>
-              <li data-percent="60">
+              <li data-percent="75">
                 <span>Go</span>
                 <div class="skills-bar">
                   <div class="bar"></div>
                 </div>
               </li>
-              <li data-percent="60">
+              <li data-percent="70">
                 <span>C</span>
                 <div class="skills-bar">
                   <div class="bar"></div>
@@ -146,7 +141,7 @@
                   <div class="bar"></div>
                 </div>
               </li>
-              <li data-percent="60">
+              <li data-percent="70">
                 <span>HTML5 & CSS3</span>
                 <div class="skills-bar">
                   <div class="bar"></div>
@@ -161,10 +156,10 @@
             </ul>
           </div>
 
-          <h2>Backend</h2>
+          <h3>Backend</h3>
           <ul>
-            <li data-percent="80">
-              <span>NodeJS</span>
+            <li data-percent="85">
+              <span>Node.js</span>
               <div class="skills-bar">
                 <div class="bar"></div>
               </div>
@@ -177,52 +172,22 @@
             </li>
           </ul>
 
-          <h2>Frontend</h2>
+          <h3>Frontend</h3>
           <ul>
-            <li data-percent="60">
-              <span>Native Android</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="50">
-              <span>ElectronJS</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="25">
-              <span>ReactJS</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="15">
-              <span>Angular</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="60">
-              <span>Handlebars</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="20">
-              <span>Pug</span>
-              <div class="skills-bar">
-                <div class="bar"></div>
-              </div>
-            </li>
-            <li data-percent="50">
-              <span>Django Template-Language</span>
+            <li data-percent="55">
+              <span>React.js</span>
               <div class="skills-bar">
                 <div class="bar"></div>
               </div>
             </li>
             <li data-percent="40">
-              <span>JQuery</span>
+              <span>Native Android</span>
+              <div class="skills-bar">
+                <div class="bar"></div>
+              </div>
+            </li>
+            <li data-percent="40">
+              <span>Electron.js</span>
               <div class="skills-bar">
                 <div class="bar"></div>
               </div>
@@ -239,7 +204,7 @@
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
               ><span>Linux</span><small></small>
             </li>
-            <li data-percent="75">
+            <li data-percent="65">
               <svg viewbox="0 0 100 100">
                 <circle cx="50" cy="50" r="45"></circle>
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
@@ -260,25 +225,25 @@
           </ul>
 
           <ul>
-            <li data-percent="70">
+            <li data-percent="80">
               <svg viewbox="0 0 100 100">
                 <circle cx="50" cy="50" r="45"></circle>
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
               ><span>REST</span><small></small>
             </li>
-            <li data-percent="50">
+            <li data-percent="40">
               <svg viewbox="0 0 100 100">
                 <circle cx="50" cy="50" r="45"></circle>
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
               ><span>GraphQL</span><small></small>
             </li>
-            <li data-percent="60">
+            <li data-percent="35">
               <svg viewbox="0 0 100 100">
                 <circle cx="50" cy="50" r="45"></circle>
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
               ><span>SQL</span><small></small>
             </li>
-            <li data-percent="75">
+            <li data-percent="65">
               <svg viewbox="0 0 100 100">
                 <circle cx="50" cy="50" r="45"></circle>
                 <circle class="cbar" cx="50" cy="50" r="45"></circle></svg
@@ -315,6 +280,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
