@@ -1,62 +1,66 @@
-@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css";
+@import "https://s.plurk.com/0e89357f530f0a843c68440a020d4eb5.css";
 
 :root {
   --primary-color: #4429b8;
   --secondary-color: #b87f29;
+
+  --white: #fbfbfb;
+  --lightgrey: rgba(238, 238, 238, 0.6);
+  --grey: #eee;
+  --darkgrey: #bbb;
+
+  --default-text-color: #555;
+  --darker-text-color: #3d405b;
 }
 
 * {
   outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 body,
 html {
-  margin: 0;
-  background: #eee;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: 0.65px;
+  font-family: "Ubuntu", sans-serif;
   font-size: 15px;
-  color: #555;
+  letter-spacing: 0.65px;
+  background-color: var(--grey);
+  color: var(--default-text-color);
   cursor: default;
 }
 
 a {
   text-decoration: none;
-  color: #555;
+  color: var(--default-text-color);
   display: block;
   transition-duration: 0.3s;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-h2 {
-  color: #3d405b;
-  margin: 15px 0px 5px 0px;
-  text-transform: uppercase;
-  font-size: 15px;
+  list-style: none;
 }
 
 h3 {
-  color: #3d405b;
-  margin: 10px 0;
-  text-transform: uppercase;
+  color: var(--darker-text-color);
   font-size: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
 }
 
 .resume {
-  width: 870px;
-  background: #fbfbfb;
-  margin: 20px auto;
-  border: 1px solid #bbb;
-  box-shadow: 0 0 20px -3px #bbb;
   position: relative;
+  width: 870px;
+  margin: 20px auto;
+  border: 1px solid var(--darkgrey);
+  box-shadow: 0 0 20px -3px var(--darkgrey);
+  background: var(--white);
   display: flex;
+  flex-direction: row;
 }
 .resume::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 6px;
   background: var(--primary-color);
@@ -65,7 +69,7 @@ h3 {
   left: 0;
 }
 .resume::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -78,26 +82,26 @@ h3 {
 .resume .func > div {
   padding-bottom: 10px;
 }
-.resume .base > div:last-of-type,
-.resume .func > div:last-of-type {
-  padding-bottom: 0;
-}
+
 .resume .base {
   width: 225px;
   padding: 30px 15px;
-  background: rgba(238, 238, 238, 0.6);
+  background-color: var(--lightgrey);
 }
-.resume .base .profile {
-  background: var(--primary-color);
+
+/* PROFILE SECTION */
+
+.resume .base #profile {
+  background-color: var(--primary-color);
   padding: 30px 15px 5px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
   z-index: 2;
 }
-.resume .base .profile::after {
-  content: '';
+.resume .base #profile::after {
+  content: "";
   position: absolute;
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   width: 100%;
   height: 30px;
   bottom: -15px;
@@ -105,34 +109,26 @@ h3 {
   transform: skewY(-5deg);
   z-index: -1;
 }
-
-.resume .base .profile .photo img {
+.resume .base #profile .photo img {
   width: 100%;
   border-radius: 50%;
 }
-.resume .base .profile .info {
+.resume .base #profile .info {
+  color: var(--white);
   text-align: center;
-  color: #fcfcfc;
 }
-.resume .base .profile .info .name {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 1.5em;
+.resume .base #profile .info .name {
+  font-size: 22px;
   font-weight: normal;
+  margin-top: 10px;
 }
-.resume .base .contact div {
+
+/* CONTACT SECTION */
+
+.resume .base #contact div {
   line-height: 30px;
 }
-.resume .base .contact div a:hover {
-  color: var(--secondary-color);
-}
-.resume .base .contact div a:hover span::after {
-  width: 100%;
-}
-.resume .base .contact div:hover i {
-  color: var(--secondary-color);
-}
-.resume .base .contact div i {
+.resume .base #contact div i {
   color: var(--primary-color);
   width: 20px;
   height: 20px;
@@ -141,11 +137,20 @@ h3 {
   margin-right: 15px;
   transition-duration: 0.3s;
 }
-.resume .base .contact div span {
+.resume .base #contact div:hover i {
+  color: var(--secondary-color);
+}
+.resume .base #contact div a:hover {
+  color: var(--secondary-color);
+}
+.resume .base #contact div span {
   position: relative;
 }
-.resume .base .contact div span::after {
-  content: '';
+.resume .base #contact div a:hover span::after {
+  width: 100%;
+}
+.resume .base #contact div span::after {
+  content: "";
   position: absolute;
   background: var(--secondary-color);
   height: 1px;
@@ -154,45 +159,52 @@ h3 {
   left: 0;
   transition-duration: 0.3s;
 }
-.resume .base .follow .box {
+
+/* FOLLOW SECTION */
+
+.resume .base #follow .box {
   text-align: center;
   vertical-align: middle;
   margin-top: 20px;
 }
-.resume .base .follow .box a {
+.resume .base #follow .box a {
   display: inline-block;
   vertical-align: text-bottom;
 }
-.resume .base .follow .box a:hover i {
+.resume .base #follow .box a:hover i {
   background: var(--secondary-color);
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
-.resume .base .follow .box a:hover i::before {
+.resume .base #follow .box a:hover i::before {
   transform: rotate(-45deg) scale(1.5);
 }
-.resume .base .follow .box i {
+.resume .base #follow .box i {
   display: inline-block;
-  font-size: 30px;
-  background: var(--primary-color);
   width: 60px;
   height: 60px;
+  background-color: var(--primary-color);
   border-radius: 50%;
-  line-height: 60px;
-  color: #fcfcfc;
   margin: 0 10px 10px 10px;
+  font-size: 30px;
+  line-height: 60px;
+  color: var(--white);
   transition-duration: 0.3s;
 }
-.resume .base .follow .box i::before {
+.resume .base #follow .box i::before {
   transition-duration: 0.3s;
 }
-.resume .base .follow .box i.fa::before {
+.resume .base #follow .box i.fa::before {
   display: block;
 }
+
+/* FULL SECTION */
+
 .resume .func {
   width: 645px;
   padding: 30px 25px;
 }
+
 .resume .func:hover > div {
   transition-duration: 0.3s;
 }
@@ -227,15 +239,20 @@ h3 {
   margin-right: 8px;
   transition-duration: 0.3s;
 }
+
+/* WORK / EDU SECTION */
+
 .resume .func .work,
 .resume .func .edu {
   float: left;
 }
-.resume .func .work small,
-.resume .func .edu small {
-  display: block;
-  opacity: 0.7;
+.resume .func .work {
+  width: 42%;
 }
+.resume .func .edu {
+  width: 58%;
+}
+
 .resume .func .work ul li,
 .resume .func .edu ul li {
   position: relative;
@@ -251,14 +268,7 @@ h3 {
 .resume .func .edu ul li:hover span {
   color: var(--secondary-color);
 }
-@keyframes circle {
-  from {
-    box-shadow: 0 0 0 0px #3d405b;
-  }
-  to {
-    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
-  }
-}
+
 .resume .func .work ul li:first-of-type::before,
 .resume .func .edu ul li:first-of-type::before {
   width: 10px;
@@ -277,7 +287,7 @@ h3 {
 .resume .func .work ul li::after,
 .resume .func .edu ul li::before,
 .resume .func .edu ul li::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
 }
@@ -299,18 +309,34 @@ h3 {
   left: 5px;
   top: 0;
 }
-.resume .func .work ul li span,
-.resume .func .edu ul li span {
+
+.resume .func .work span,
+.resume .func .edu span {
   transition-duration: 0.3s;
 }
-.resume .func .work {
-  width: 42%;
+.resume .func .work small,
+.resume .func .edu small {
+  display: block;
+  opacity: 0.7;
 }
-.resume .func .edu {
-  width: 58%;
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #3d405b;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(61, 64, 91, 0);
+  }
 }
+
+/* SKILLS SECTION */
+
 .resume .func .skills-prog {
   clear: both;
+}
+.resume .func .skills-prog h3 {
+  color: var(--default-text-color);
+  text-transform: capitalize;
 }
 .resume .func .skills-prog ul {
   margin-left: 15px;
@@ -347,6 +373,7 @@ h3 {
   box-shadow: 0 0 0 var(--primary-color);
   border-radius: 5px;
 }
+
 .resume .func .skills-soft ul {
   display: flex;
   justify-content: space-between;
@@ -388,6 +415,9 @@ h3 {
 .resume .func .skills-soft ul li span {
   top: 40%;
 }
+
+/* INTERESTS SECTION */
+
 .resume .func .interests-items {
   box-sizing: border-box;
   padding: 15px;
