@@ -1,6 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css";
-@import "https://s.plurk.com/0e89357f530f0a843c68440a020d4eb5.css";
 
 :root {
   --primary-color: #4429b8;
@@ -80,7 +78,7 @@ h3 {
 }
 .resume .base > div,
 .resume .func > div {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .resume .base {
@@ -134,7 +132,9 @@ h3 {
   height: 20px;
   font-size: 20px;
   text-align: center;
-  margin-right: 15px;
+  vertical-align: middle;
+  margin-right: 16px;
+  margin-left: 8px;
   transition-duration: 0.3s;
 }
 .resume .base #contact div:hover i {
@@ -165,6 +165,8 @@ h3 {
 .resume .base #follow .box {
   text-align: center;
   vertical-align: middle;
+}
+.resume .base #follow .box:first-of-type {
   margin-top: 20px;
 }
 .resume .base #follow .box a {
@@ -334,6 +336,9 @@ h3 {
 .resume .func .skills-prog {
   clear: both;
 }
+.resume .func .skills-prog div h3 {
+  text-align: end;
+}
 .resume .func .skills-prog ul {
   margin-left: 15px;
 }
@@ -400,49 +405,10 @@ h3 {
   stroke: var(--primary-color);
   stroke-linecap: round;
 }
-.resume .func .skills-soft ul li span,
-.resume .func .skills-soft ul li small {
+.resume .func .skills-soft ul li span {
   position: absolute;
   display: block;
   width: 100%;
-  top: 52%;
-  transition-duration: 0.3s;
-}
-.resume .func .skills-soft ul li span {
   top: 40%;
-}
-
-/* INTERESTS SECTION */
-
-.resume .func .interests-items {
-  box-sizing: border-box;
-  padding: 15px;
-  width: 100%;
-  border: 1px solid #cdcdcd;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-.resume .func .interests-items div {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-.resume .func .interests-items div:hover i {
-  transform: scale(1.2);
-}
-.resume .func .interests-items div:hover span {
-  color: var(--secondary-color);
   transition-duration: 0.3s;
-}
-.resume .func .interests-items div i {
-  font-size: 45px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  color: var(--primary-color);
-  transition-duration: 0.3s;
-}
-.resume .func .interests-items div span {
-  display: block;
 }
