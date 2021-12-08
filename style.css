@@ -87,6 +87,43 @@ h3 {
   background-color: var(--lightgrey);
 }
 
+.resume .func {
+  width: 645px;
+  padding: 30px 25px;
+}
+.resume .func:hover > div {
+  transition-duration: 0.3s;
+}
+.resume .func:hover > div:hover h3 {
+  letter-spacing: 1.6px;
+}
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.2);
+}
+.resume .func:hover > div:hover h2 {
+  letter-spacing: 1.4px;
+}
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.resume .func h3 i {
+  color: #fcfcfc;
+  background: var(--primary-color);
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+
 /*************************
   Profile Section
 *************************/
@@ -204,48 +241,6 @@ h3 {
 }
 .resume .base .follow .box i.fa::before {
   display: block;
-}
-
-/* FULL SECTION */
-
-.resume .func {
-  width: 645px;
-  padding: 30px 25px;
-}
-
-.resume .func:hover > div {
-  transition-duration: 0.3s;
-}
-.resume .func:hover > div:hover h3 {
-  letter-spacing: 1.6px;
-}
-.resume .func:hover > div:hover h3 i {
-  transform: scale(1.2);
-}
-
-.resume .func:hover > div:hover h2 {
-  letter-spacing: 1.4px;
-}
-
-.resume .func:hover > div:not(:hover) {
-  opacity: 0.5;
-}
-.resume .func h3 {
-  transition-duration: 0.3s;
-  margin-top: 0;
-}
-.resume .func h3 i {
-  color: #fcfcfc;
-  background: var(--primary-color);
-  width: 42px;
-  height: 42px;
-  font-size: 20px;
-  line-height: 42px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  margin-right: 8px;
-  transition-duration: 0.3s;
 }
 
 /*************************
