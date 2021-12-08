@@ -121,12 +121,14 @@ h3 {
   margin-top: 10px;
 }
 
-/* CONTACT SECTION */
+/*************************
+  Contact Section
+*************************/
 
-.resume .base #contact div {
+.resume .base .contact div {
   line-height: 30px;
 }
-.resume .base #contact div i {
+.resume .base .contact div i {
   color: var(--primary-color);
   width: 20px;
   height: 20px;
@@ -137,19 +139,19 @@ h3 {
   margin-left: 8px;
   transition-duration: 0.3s;
 }
-.resume .base #contact div:hover i {
+.resume .base .contact div:hover i {
   color: var(--secondary-color);
 }
-.resume .base #contact div a:hover {
+.resume .base .contact div a:hover {
   color: var(--secondary-color);
 }
-.resume .base #contact div span {
+.resume .base .contact div span {
   position: relative;
 }
-.resume .base #contact div a:hover span::after {
+.resume .base .contact div a:hover span::after {
   width: 100%;
 }
-.resume .base #contact div span::after {
+.resume .base .contact div span::after {
   content: "";
   position: absolute;
   background: var(--secondary-color);
