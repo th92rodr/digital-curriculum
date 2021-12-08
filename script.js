@@ -1,5 +1,5 @@
 (function () {
-  $('.skills-prog li')
+  $('.skills_programming li')
     .find('.skills-bar')
     .each(function (i) {
       $(this)
