@@ -331,42 +331,44 @@ h3 {
   }
 }
 
-/* SKILLS SECTION */
+/*************************
+  Programming Skills Section
+*************************/
 
-.resume .func .skills-prog {
+.resume .func .skills_programming {
   clear: both;
 }
-.resume .func .skills-prog div h3 {
+.resume .func .skills_programming div h3 {
   text-align: end;
 }
-.resume .func .skills-prog ul {
+.resume .func .skills_programming ul {
   margin-left: 15px;
 }
-.resume .func .skills-prog ul li {
+.resume .func .skills_programming ul li {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
   transition-duration: 0.3s;
 }
-.resume .func .skills-prog ul li:hover {
+.resume .func .skills_programming ul li:hover {
   color: var(--secondary-color);
 }
-.resume .func .skills-prog ul li:hover .skills-bar .bar {
+.resume .func .skills_programming ul li:hover .skills-bar .bar {
   background: var(--secondary-color);
   box-shadow: 0 0 0 1px var(--secondary-color);
 }
-.resume .func .skills-prog ul li span {
+.resume .func .skills_programming ul li span {
   display: block;
   width: 120px;
 }
-.resume .func .skills-prog ul li .skills-bar {
+.resume .func .skills_programming ul li .skills-bar {
   background: #cdcdcd;
   height: 2px;
   width: calc(100% - 120px);
   position: relative;
   border-radius: 2px;
 }
-.resume .func .skills-prog ul li .skills-bar .bar {
+.resume .func .skills_programming ul li .skills-bar .bar {
   position: absolute;
   top: -1px;
   height: 4px;
