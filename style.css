@@ -87,16 +87,18 @@ h3 {
   background-color: var(--lightgrey);
 }
 
-/* PROFILE SECTION */
+/*************************
+  Profile Section
+*************************/
 
-.resume .base #profile {
+.resume .base .profile {
   background-color: var(--primary-color);
   padding: 30px 15px 5px 15px;
   margin: -30px -15px 45px -15px;
   position: relative;
   z-index: 2;
 }
-.resume .base #profile::after {
+.resume .base .profile::after {
   content: "";
   position: absolute;
   background-color: var(--primary-color);
@@ -107,15 +109,15 @@ h3 {
   transform: skewY(-5deg);
   z-index: -1;
 }
-.resume .base #profile .photo img {
+.resume .base .profile .photo img {
   width: 100%;
   border-radius: 50%;
 }
-.resume .base #profile .info {
+.resume .base .profile .info {
   color: var(--white);
   text-align: center;
 }
-.resume .base #profile .info .name {
+.resume .base .profile .info .name {
   font-size: 22px;
   font-weight: normal;
   margin-top: 10px;
