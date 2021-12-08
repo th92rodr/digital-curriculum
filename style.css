@@ -160,28 +160,30 @@ h3 {
   transition-duration: 0.3s;
 }
 
-/* FOLLOW SECTION */
+/*************************
+  Follow Section
+*************************/
 
-.resume .base #follow .box {
+.resume .base .follow .box {
   text-align: center;
   vertical-align: middle;
 }
-.resume .base #follow .box:first-of-type {
+.resume .base .follow .box:first-of-type {
   margin-top: 20px;
 }
-.resume .base #follow .box a {
+.resume .base .follow .box a {
   display: inline-block;
   vertical-align: text-bottom;
 }
-.resume .base #follow .box a:hover i {
+.resume .base .follow .box a:hover i {
   background: var(--secondary-color);
   border-radius: 5px;
   transform: rotate(45deg) scale(0.8);
 }
-.resume .base #follow .box a:hover i::before {
+.resume .base .follow .box a:hover i::before {
   transform: rotate(-45deg) scale(1.5);
 }
-.resume .base #follow .box i {
+.resume .base .follow .box i {
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -193,10 +195,10 @@ h3 {
   color: var(--white);
   transition-duration: 0.3s;
 }
-.resume .base #follow .box i::before {
+.resume .base .follow .box i::before {
   transition-duration: 0.3s;
 }
-.resume .base #follow .box i.fa::before {
+.resume .base .follow .box i.fa::before {
   display: block;
 }
 
