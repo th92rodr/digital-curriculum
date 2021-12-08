@@ -375,40 +375,47 @@ h3 {
   border-radius: 5px;
 }
 
-.resume .func .skills-soft ul {
+/*************************
+  Software Skills Section
+*************************/
+
+.resume .func .skills_software ul {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  height: 45px;
+  margin-bottom: 30px;
 }
-.resume .func .skills-soft ul li {
+.resume .func .skills_software ul li {
   position: relative;
 }
-.resume .func .skills-soft ul li:hover svg .cbar {
+.resume .func .skills_software ul li:hover svg .cbar {
   stroke: var(--secondary-color);
   stroke-width: 4px;
 }
-.resume .func .skills-soft ul li:hover span,
-.resume .func .skills-soft ul li:hover small {
+.resume .func .skills_software ul li:hover span {
   transform: scale(1.2);
 }
-.resume .func .skills-soft ul li svg {
+.resume .func .skills_software ul li svg {
   width: 95%;
   fill: transparent;
   transform: rotate(-90deg);
+  height: 100%;
 }
-.resume .func .skills-soft ul li svg circle {
+.resume .func .skills_software ul li svg circle {
   stroke-width: 1px;
   stroke: #cdcdcd;
 }
-.resume .func .skills-soft ul li svg .cbar {
+.resume .func .skills_software ul li svg .cbar {
   stroke-width: 3px;
   stroke: var(--primary-color);
   stroke-linecap: round;
 }
-.resume .func .skills-soft ul li span {
+.resume .func .skills_software ul li span {
   position: absolute;
+  width: max-content;
+  text-align: center;
+  top: 100%;
+  left: -15%;
   display: block;
-  width: 100%;
-  top: 40%;
   transition-duration: 0.3s;
 }
